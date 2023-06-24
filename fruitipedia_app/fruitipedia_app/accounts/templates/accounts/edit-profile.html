@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=\, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/static/styles/styles.css"/>
+    <link rel="stylesheet" href="/styles/styles.css"/>
     <title>Fruitipedia</title>
 </head>
 <body>
@@ -12,10 +12,11 @@
     <header>
         <!-- Navigation -->
         <a id="logo" href="#">
-            <img id="logo-img" src="/static/images/logo.png" alt="logo"/>
+            <img id="logo-img" src="/images/logo.png" alt="logo"/>
         </a>
 
         <nav>
+
             <!-- If there is a user profile -->
             <div class="user">
                 <a href="#">Dashboard</a>
@@ -34,37 +35,41 @@
 
     <main>
 
-        <!-- Create Profile Form -->
+        <!-- Edit Profile Form -->
+
         <section id="register">
             <div class="form">
-                <h2>Create Profile</h2>
+                <h2>Edit Profile</h2>
                 <form class="register-form">
+                    <label for="first-name">First Name:</label>
                     <input
                             type="text"
-                            name="first-name"
+                            name="first name"
                             id="first-name"
-                            placeholder="First Name"
+                            value="Mariya"
                     />
+                    <label for="last-name">Last Name:</label>
                     <input
                             type="text"
-                            name="last-name"
+                            name="last name"
                             id="last-name"
-                            placeholder="Last Name"
+                            value="Petrova"
                     />
+                    <label for="url">Image URL:</label>
                     <input
-                            type="email"
-                            name="email"
-                            id="register-email"
-                            placeholder="Email"
+                            type="url"
+                            name="url"
+                            id="url"
+                            value="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg"
                     />
+                    <label for="age">Age:</label>
                     <input
-                            type="password"
-                            name="password"
-                            id="register-password"
-                            placeholder="Password"
+                            type="number"
+                            name="age"
+                            id="age"
+                            value="18"
                     />
-
-                    <button type="submit">Create</button>
+                    <button type="submit">Edit</button>
 
                 </form>
             </div>
