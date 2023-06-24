@@ -33,3 +33,6 @@ class Profile(models.Model):
     image_url = models.URLField(blank=True, null=True)
     age = models.IntegerField(blank=True, default=18)
 
+    @property
+    def full_name(self):
+        return f"{self.first_name} {self.last_name}"
