@@ -31,7 +31,7 @@ class Profile(models.Model):
     email = models.EmailField(blank=False, null=False, max_length=40)
     password = models.CharField(blank=False, null=False, max_length=20, validators=[MinLengthValidator(8)])
     image_url = models.URLField(blank=True, null=True)
-    age = models.IntegerField(blank=True, default=18)
+    age = models.PositiveIntegerField(blank=True, default=18)
 
     @property
     def full_name(self):
